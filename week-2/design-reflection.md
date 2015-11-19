@@ -1,4 +1,4 @@
-![Alt text](/img/site-map.png "Sitemap")
+![Alt text](/imgs/site-map.png "Sitemap")
 
 #2.3 Reflection
  
