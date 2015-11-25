@@ -1,12 +1,38 @@
+Colors
+
 ![alt text](imgs/3.4.1 Colors.png "Colors")
-![alt text](imgs/3.4.2 column.png "Colors")
-![alt text](imgs/3.4.3 row.png "Colors")
-![alt text](imgs/3.4.4 Make Equidistant.png "Colors")
-![alt text](imgs/3.4.5 Squares.png "Colors")
-![alt text](imgs/3.4.6 Footer.png "Colors")
-![alt text](imgs/3.4.7 Header.png "Colors")
-![alt text](imgs/3.4.8 Sidebar.png "Colors")
-![alt text](imgs/3.4.9 Get Creative.png "Colors")
+
+Column
+
+![alt text](imgs/3.4.2 column.png "Column")
+
+Row
+
+![alt text](imgs/3.4.3 Row.png "Row")
+
+Make Equidistant
+
+![alt text](imgs/3.4.4 Make Equidistant.png "Equidistant")
+
+Squares
+
+![alt text](imgs/3.4.5 Squares.png "Squares")
+
+Footer
+
+![alt text](imgs/3.4.6 Footer.png "Footer")
+
+Header
+
+![alt text](imgs/3.4.7 Header.png "Header")
+
+Sidebar
+
+![alt text](imgs/3.4.8 Sidebar.png "Sidebar")
+
+Creative
+
+![alt text](imgs/3.4.9 Get Creative.png "Creative")
 
 
 ###How can you use Chrome's DevTools inspector to help you format or position elements?
