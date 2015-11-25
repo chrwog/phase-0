@@ -1,3 +1,5 @@
+####Note: we forgot to refresh the page after each challenge. We were still able to complete all of the challenges however.
+
 Colors
 
 ![alt text](imgs/3.4.1 Colors.png "Colors")
