@@ -16,3 +16,26 @@ puts 24 * 365
 puts 60 * 24 * 365 * 10
 ```
 
+####How does Ruby handle addition, subtraction, multiplication, and division of numbers?
+
+Ruby handles it by reading left to right, with addition and subtraction very similar to how a person would solve it on paper. For multiplication ruby uses * for multiplication and / for division. Division changes depending on wether integers or floats are used.  
+
+####What is the difference between integers and floats?
+
+Integers are numbers without decimals. Floats are numbers with any sort of decimal.
+
+####What is the difference between integer and float division?
+
+Integer division will only give you the whole number rounded down. Float division will give you a decimal.
+
+####What are strings? Why and when would you use them?
+
+Strings are a bunch of characters, like words or numbers or punctuation grouped together. You would use these when you want to manipulate a group of characters or to print text lines out. You would use this over integers if you wanted to display the numbers as text and manipulate them as such.
+
+####What are local variables? Why and when would you use them?
+
+Local variables are declared in the file and can only be used within. You would want to use these when you only need them for the file that they are in. This will prevent outside files from being able to access those variables.
+
+####How was this challenge? Did you get a good review of some of the basics?
+
+The challenge started slow, but once I completed the first challenge the others were easier.
