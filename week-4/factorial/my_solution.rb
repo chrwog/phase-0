@@ -1,6 +1,6 @@
 # Factorial
 
-# I worked on this challenge [by myself, with:Thomas ].
+# I worked on this challenge [With Thomas Huang].
 
 
 # Your Solution Below
