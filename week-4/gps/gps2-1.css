@@ -1,0 +1,35 @@
+body{
+  font-family: Tahoma, Geneva, sans-serif;
+}
+header{
+  background-color:#00bfff;
+  width: 1000px;
+  padding: 5px;
+  color:white;
+}
+section {
+  
+}
+.column-1 {
+  background-color:#AFCCE8;
+  width: 500px;
+  display: inline-block;
+ 
+}
+
+.column-2 {
+  background-color:#CDF4FF;
+  width: 500px;
+  padding: 0px 5px 23px 5px;
+  position: absolute;
+  display: inline-block;
+}
+
+footer {
+  background-color:#00bfff;
+  clear: both;
+  width: 1000px;
+  padding: 5px;
+  color: white;
+}
+
