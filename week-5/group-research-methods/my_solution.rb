@@ -13,12 +13,19 @@ my_family_pets_ages = {"Evi" => 6, "Ditto" => 3, "Hoobie" => 3, "George" => 12, 
 # Steps: Check if elements of the array are an integer.
 # If an integer, add given number to the integer.
 
+# Initial Solution
+# def my_array_modification_method!(source, thing_to_modify)
+#   source.map! do |x|  
+#     if x.is_a?(Integer)
+#       x += thing_to_modify
+#     else x
+#     end
+#   end
+# end
+
 def my_array_modification_method!(source, thing_to_modify)
   source.map! do |x|  
-    if x.is_a?(Integer)
-      x += thing_to_modify
-    else x
-    end
+    if x.is_a?(Integer) then x += thing_to_modify else x end
   end
 end
 
@@ -27,9 +34,16 @@ end
 # output: original hash modified
 # Steps: Go through each value in Hash and add user given number.
 
+# Initial Solution
+# source.each do |k, v|
+#   	source[k] = v + thing_to_modify
+#   end
+# end
+
 def my_hash_modification_method!(source, thing_to_modify)
 	source.each {|k, v| source[k] = v + thing_to_modify}
 end
+
 
 ## Identify and describe the Ruby method(s) you implemented.
 # map! - Adds the given code block to each element of the original array
@@ -42,6 +56,7 @@ end
 # In order to not get errors with the strings in the array, I used an if else statement with the .is_a? method.
 # The .is_a? method checks to see if the element is an integer or not. If it is it returns true, otherwise it's false.
 # If the element is an integer, the given number is added to that element.
+# For refactoring I used a For then else statement to put it all on one line.
 
 # For the Hash I used the .each method. This was used to go through each key and value. 
 # For each value, the given number was added to it.
