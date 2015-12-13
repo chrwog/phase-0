@@ -57,23 +57,33 @@
 def pad!(array, min_size, value = nil) #destructive
 
  # Your code here
-new_array= array
-  padding = min_size - array.length
-new_array.fill(value, array.length..padding)
+array.fill(value, array.length..(min_size-1))
 end
 
 def pad(array, min_size, value = nil) #non-destructive
  # Your code here
 new_array= Array.new
-  length = array.length
-  length.times {|x| new_array << (array[x])}
-  padding = min_size - length
-  if padding > 0
-    padding.times {|filler| new_array << value}
-  end
-  return  new_array
-
+ length = array.length
+ length.times {|x| new_array << (array[x])}
+ new_array.fill(value, length..(min_size-1))
 end
 
-
 # 4. Reflection
+
+## Were you successful in breaking the problem down into small steps?
+# Yes we were able to break the problem down in the pseudocode and determine our steps.
+
+## Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
+# For the most part. We pretty much followed the Pseudocode and were able to get the first array done. The non-destructive array took a little longer because we initially thought we could just copy/paste the solution for the destructive.
+ 
+## Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
+# No. The destructive array worked after a few edits, but the non-destructive didn't. We encountered a bunch of errors that at first seem related to the first solution. Then we realized we needed to create  new array for the non-destructive code. That pretty much solved our problem.
+ 
+## When you refactored, did you find any existing methods in Ruby to clean up your code?
+# Yes. We discovered the fill method which allows the user to fill the array with given block
+
+## How readable is your solution? Did you and your pair choose descriptive variable names?
+# It's readable. We used generic names since that seemed to fit the parameters that were given in the challenge.
+
+## What is the difference between destructive and non-destructive methods in your own words?
+# Destructive methods alter the original input whereas non-destructive methods create new inputs and modify those, leaving the original intact.
