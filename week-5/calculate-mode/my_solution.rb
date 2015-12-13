@@ -57,21 +57,15 @@ end
 
 # 4. Reflection
 
-## Were you successful in breaking the problem down into small steps?
-# Yes. We were able to break the problem down and slowly work our way to a solution.
+## Which data structure did you and your pair decide to implement and why?
+# We implemented the hash data structure. This allowed us to use the array elements as the key, and the number of times they repeated as the value. We were able to manipulate the data to produce the solution this way.
 
-## Once you had written your pseudocode, were you able to easily translate it into code? What difficulties and successes did you have?
-# Sort of. We initially thought we had all of the steps in our pseudocode. However some of the steps required more detail than what we had written down in the pseudocode.
-# We were successful in determining the broad strokes of the code, however we missed some of the finer details that we probably should have put in the pseudocode.
+## Were you more successful breaking this problem down into implementable pseudocode than the last with a pair? 
+# No. We had better pseudocode for the last assignment. Mainly because it was more detailed. This could also be because the first challenge was easier for us than this challenge.
 
-## Was your initial solution successful at passing the tests? If so, why do you think that is? If not, what were the errors you encountered and what did you do to resolve them?
-# No. We were able to get the count of the number of repeating elements as a value with the element being the hash, for example if 5 repeated twice 5 => 2. But had trouble translating that into an array. To resolve this, we used an if loop to put the values in the variable big_count. We then compared each value to the big_count in another if loop and put the keys with the values equal to the big_count into the final array.
-	
-## When you refactored, did you find any existing methods in Ruby to clean up your code?
-# Yes. We discovered the .max method which returns the object with the largest value. This made it easy to compare how many times each element repeated and push the ones with the most frequent values.
+## What issues/successes did you run into when translating your pseudocode to code?
+# Our pseudocode wasn't verbose enough. We had the basic idea, but we didn't know the details. We couldn't figure out how to get the hash value to push the proper key into the array.
+# Our initial solution was to create a variable to hold the count and iterate through two loops. We later found the .max method which made things way easier.
 
-## How readable is your solution? Did you and your pair choose descriptive variable names?
-# I think our initial solution is readable but  bit confusing. Our refactored solution is much easier to read. I think our variable names were descriptive.
-
-## What is the difference between destructive and non-destructive methods in your own words?
-# Destructive methods alter the original input whereas non-destructive methods create new inputs and modify those, leaving the original intact.
+## What methods did you use to iterate through the content? Did you find any good ones when you were refactoring? Were they difficult to implement?
+# For our initial solution my partner used an interesting .each_with_object method from his GPS grocery list. We also used each_value and each_pair. We found the .max method which seems like it will be really handy in the future while refactoring.
