@@ -57,24 +57,16 @@
 def pad!(array, min_size, value = nil) #destructive
 
  # Your code here
-new_array= array
-  padding = min_size - array.length
-new_array.fill(value, array.length..padding)
+array.fill(value, array.length..(min_size-1))
 end
 
 def pad(array, min_size, value = nil) #non-destructive
  # Your code here
 new_array= Array.new
-  length = array.length
-  length.times {|x| new_array << (array[x])}
-  padding = min_size - length
-  if padding > 0
-    padding.times {|filler| new_array << value}
-  end
-  return  new_array
-
+ length = array.length
+ length.times {|x| new_array << (array[x])}
+ new_array.fill(value, length..(min_size-1))
 end
-
 
 # 4. Reflection
 
@@ -95,4 +87,3 @@ end
 
 ## What is the difference between destructive and non-destructive methods in your own words?
 # Destructive methods alter the original input whereas non-destructive methods create new inputs and modify those, leaving the original intact.
-
