@@ -80,3 +80,16 @@ var michaelPhelps = new Athlete("Michael Phelps", 29, "swimming", "It's medicina
 
 console.log(michaelPhelps.constructor === Athlete)
 console.log(michaelPhelps.name + " " + michaelPhelps.sport + " " + michaelPhelps.quote)
+
+// Reflection
+
+// What JavaScript knowledge did you solidify in this challenge?
+// The creation of functions and the general syntax of JavaScript
+
+// What are constructor functions?
+// Constructor functions are objects that contain properties. These constructor functions can be called on variables.
+
+// How are constructors different from Ruby classes (in your research)?
+// They're different in that Ruby classes have different methods depending on if it's a new instance or not.
+// Javascript don't have classes so there's no special syntax for defining how to create an instance.
+// You can potentially have any function be a constructor.
