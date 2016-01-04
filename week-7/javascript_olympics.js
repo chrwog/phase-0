@@ -1,3 +1,9 @@
+// JavaScript Olympics
+
+// I paired [with:Bret Burnett] on this challenge.
+
+// This challenge took me [2] hours.
+
 // Warm Up
 // Bulk Up
   // Pseudocode:
