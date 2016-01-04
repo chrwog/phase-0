@@ -47,7 +47,7 @@ function separateComma(number) {
       numArray.splice(i, 0, ",");
     }
   }
-  
+
   numArray = numArray.reverse();
   console.log(numArray.join(''));
 }
@@ -63,3 +63,15 @@ separateComma(1234567);
 
 
 // Reflection
+
+// What was it like to approach the problem from the perspective of JavaScript? Did you approach the problem differently?
+// We took a similar approach to the problem in ruby. Since many of the operators are the same, this made sense to us.
+
+// What did you learn about iterating over arrays in JavaScript?
+// You can use counters in JavaScript to iterate over arrays, there's no do method that will work.
+
+// What was different about solving this problem in JavaScript?
+// The syntax is a bit different compared to ruby. We had to use a counter to iterate over the array.
+
+// What built-in methods did you find to incorporate in your refactored solution?
+// I didn't find any methods, but I was able to eliminate unnecessary variables and solve an undefined issue we were having.
