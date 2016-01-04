@@ -54,7 +54,9 @@ class VirusPredictor
     num_months = 0
 
     DENSITY_SPEED.each do |density_limit, speed|
-      speed if @population_density >= density_limit
+       if @population_density >= density_limit
+        num_months = speed
+      end
     end
 
     puts " and will spread across the state in #{num_months} months.\n\n"
