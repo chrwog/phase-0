@@ -37,14 +37,27 @@ function separateComma(number) {
 
 
 // Refactored Solution
-
+function separateComma(number) {
+  var numArray = number.toString().split("");
+  var i = numArray.length - 1;
+  numArray.reverse();
+  
+  for (i; i > 0; i--){
+    if (i % 3 === 0 && i !== 0){
+      numArray.splice(i, 0, ",");
+    }
+  }
+  
+  numArray = numArray.reverse();
+  console.log(numArray.join(''));
+}
 
 
 // Your Own Tests (OPTIONAL)
-console.log(separateComma(1234));
-console.log(separateComma(12345));
-console.log(separateComma(123456));
-console.log(separateComma(1234567));
+separateComma(1234);
+separateComma(12345);
+separateComma(123456);
+separateComma(1234567);
 
 
 
