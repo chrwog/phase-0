@@ -1,7 +1,7 @@
 # Virus Predictor
 
-# I worked on this challenge [by myself, with: ].
-# We spent [#] hours on this challenge.
+# I worked on this challenge [with: LeeAnne Hawley ].
+# We spent [2] hours on this challenge.
 
 # EXPLANATION OF require_relative
 # require_relative is a link to a file in the same directory
@@ -10,59 +10,55 @@ require_relative 'state_data'
 
 class VirusPredictor
 
-  # initializes the three variables for use within the class
   def initialize(state_of_origin, population_density, population)
     @state = state_of_origin
     @population = population
     @population_density = population_density
   end
-  # Returns the results of the predicted_deaths and speed_of_spread methods
+
   def virus_effects
-    predicted_deaths(@population_density, @population, @state)
-    speed_of_spread(@population_density, @state)
+    predicted_deaths
+    speed_of_spread
   end
 
   private
-  # calculates the number of deaths based off of population density and state
-  def predicted_deaths(population_density, population, state)
-    # predicted deaths is solely based on population density
-    if @population_density >= 200
-      number_of_deaths = (@population * 0.4).floor
-    elsif @population_density >= 150
-      number_of_deaths = (@population * 0.3).floor
-    elsif @population_density >= 100
-      number_of_deaths = (@population * 0.2).floor
-    elsif @population_density >= 50
-      number_of_deaths = (@population * 0.1).floor
-    else
-      number_of_deaths = (@population * 0.05).floor
-    end
 
+  DENSITY_FACTORS = {
+      0 => 0.05,
+     50 => 0.1,
+    100 => 0.2,
+    150 => 0.3,
+    200 => 0.4
+  }
+
+  def predicted_deaths
+    number_of_deaths = 0
+
+    DENSITY_FACTORS.each do |density_limit, factor|
+      if @population_density >= density_limit
+        number_of_deaths = (@population * factor).floor
+      end
+    end
     print "#{@state} will lose #{number_of_deaths} people in this outbreak"
-
   end
- # calculates how fast the virus will spread across the state based on population density
-  def speed_of_spread(population_density, state) #in months
-    # We are still perfecting our formula here. The speed is also affected
-    # by additional factors we haven't added into this functionality.
-    speed = 0.0
 
-    if @population_density >= 200
-      speed += 0.5
-    elsif @population_density >= 150
-      speed += 1
-    elsif @population_density >= 100
-      speed += 1.5
-    elsif @population_density >= 50
-      speed += 2
-    else
-      speed += 2.5
+  DENSITY_SPEED = {
+      0 => 2.5,
+     50 => 2,
+    100 => 1.5,
+    150 => 1,
+    200 => 0.5
+  }
+
+  def speed_of_spread
+    num_months = 0
+
+    DENSITY_SPEED.each do |density_limit, speed|
+      speed if @population_density >= density_limit
     end
 
-    puts " and will spread across the state in #{speed} months.\n\n"
-
+    puts " and will spread across the state in #{num_months} months.\n\n"
   end
-
 end
 
 #=======================================================================
@@ -86,3 +82,14 @@ alaska.virus_effects
 
 #=======================================================================
 # Reflection Section
+
+# What are the differences between the two different hash syntaxes shown in the state_data file?
+# The difference is the first key is a string while the others are symbols.
+# What does require_relative do? How is it different from require?
+# require_relative links an additional file to the current one through a specific path. Require is in the same folder 
+# What are some ways to iterate through a hash?
+# You can iterate using an if loop and a counter and index. You can also iterate using a method like .map or .each.
+# When refactoring virus_effects, what stood out to you about the variables, if anything?
+# There was a lot of repeating of variables. I feel like this could be reduced to elminiate some of the lines of code.
+# What concept did you most solidify in this challenge?
+# Iterating through nested hash arrays.
