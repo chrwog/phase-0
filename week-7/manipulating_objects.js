@@ -17,14 +17,25 @@ var terah = {
 // Write your code below.
 var adam = {
   name: "Adam"
-  
 }
 
+terah.spouse = adam;
+terah.weight = 125;
+delete terah.eyeColor;
+adam.spouse = terah;
+terah.children = {
 
-
-
-
-
+}
+terah.children.carson = {
+  name: "Carson"
+}
+terah.children.carter = {
+  name: "Carter"
+}
+terah.children.colton = {
+  name: "Colton"
+}
+adam.children = terah.children
 
 
 
@@ -32,7 +43,17 @@ var adam = {
 // __________________________________________
 // Reflection: Use the reflection guidelines
 //
-//
+// What tests did you have trouble passing? What did you do to make it pass? Why did that work?
+// I had trouble with adding the spouse property adam outside of the object without researching.
+// After researching how to add properties and specifically which adam, I was able to pass it.
+// This worked because initially I thought the directions wanted me to add "Adam" to the spouse property.
+// What it was asking for was to add the object adam.
+
+// How difficult was it to add and delete properties outside of the object itself?
+// Not that difficult once I understood the syntax.
+
+// What did you learn about manipulating objects in this challenge?
+// That you can change a lot of the properties outside of the object itself.
 //
 //
 //
