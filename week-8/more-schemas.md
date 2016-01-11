@@ -1,10 +1,10 @@
 ### Release 2:
-![alt text](one to one example.png "One-to-One")
+![alt text](imgs/one to one example.png "One-to-One")
 
 This is an example of a one-to-one relationship. Each person can have driver's license. However a person may only have one license. Each license can only be associated with one person.
 
 ### Release 4:
-![alt text](many to many.png "Many-to-Many")
+![alt text](imgs/many to many.png "Many-to-Many")
 
 ### Reflection
 
