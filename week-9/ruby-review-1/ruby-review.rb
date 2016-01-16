@@ -1,3 +1,6 @@
+# NOTE!!! I could only submit one url for this assignment. The other ruby review I worked on for this challeng is here:
+# https://github.com/chrwog/phase-0/blob/master/week-9/ruby-review-2/ruby_review.rb
+
 # U2.W6: Testing Assert Statements
 
 # I worked on this challenge [with: Breton Burnett].
